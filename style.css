@@ -1,0 +1,187 @@
+/*
+Theme Name:   Genesis Child Theme
+Author:       Said Sultan
+Template:     genesis
+Version:      1.0.0
+Text Domain:  genesischild
+*/
+
+/* main header wrap */
+
+:root {
+    --bg-yellow: #F7E05F;
+    --color-yellow: #F7E05F;
+    --color-black: #0D0E0E;
+    --bg-black: #000000;
+    --bg-orange: #F9D029;
+    --bg-offwhite: #f5f6f7;
+    --border-gray: #FFFFFF57;
+    --color-white: #ffffff;
+    --bg-white: #ffffff;
+    --color-gray: #D3D3D3;
+}
+
+body {
+    margin: 0;
+    font-family: 'calibre';
+}
+
+/* footer right side form input field for type text*/
+.newsletter-form input[type=text] {
+    background: var(--bg-white) !important;
+    border: none !important;
+    color: var(--color-black) !important;
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+    padding: 15px !important;
+    margin-bottom: 20px;
+}
+
+/* footer right side form input field for type button */
+.newsletter-form input[type=button] {
+    font-size: 16px !important;
+    padding: 14px 44px 10px 44px !important;
+    border-radius: 0px !important;
+    font-family: 'Calibre' !important;
+    border: none !important;
+    cursor: pointer !important;
+    background: var(--bg-yellow) !important;
+    color: var(--color-black) !important;
+    font-weight: bold !important;
+}
+
+.custom-logo {
+    height: 56px;
+    width: 228px;
+}
+
+/* Main Header */
+.js-main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 10;
+    background-color: black;
+}
+.main-header-black {
+    background-color: var(--bg-black);
+}
+
+/* header wrapper div */
+.wrapper {
+    max-width: 1920px;
+    margin: auto;
+}
+
+/* inner header  */
+.site-header {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+    padding: 1.2em 3em 1.2em 2em;
+    margin: auto;
+}
+
+/* site logo */
+.site-logo {
+    width:200px;
+}
+
+/* site logo image */
+.site-title img {
+    width: 100%;
+}
+
+/* header nav menu */
+.js-nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    margin-bottom: 8px;
+}
+
+/* header menu items */
+.js-nav-menu ul li {
+    list-style: none;
+    margin: 0 38px 0 20px;
+}
+
+/* header menu links hover */
+.js-nav-menu ul li a:hover {
+    color:var(--color-yellow) !important;
+}
+
+/* header menu links style */
+.js-nav-menu ul li a {
+    text-decoration: none;
+    color:var(--color-white);
+    font-size: 19px;   
+    font-weight: 500;
+    color: white;
+}
+
+.js-nav-toggle {
+    display: none;
+    z-index: 10;
+}
+
+.js-nav-menu-scroll-active {
+    background:var(--color-black);
+}
+
+
+@media only screen and (min-width:1650px) {
+    .js-nav-menu ul li a {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width:1035px) {
+    .site-header {
+        padding: 1em;
+    }
+
+    .site-title {
+        max-width: 50% !important;
+        margin-left: -30px;
+    }
+
+    .js-nav-menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        align-items: center;
+        left: 0;
+        top: 54px;
+        /* overflow: hidden; */
+        padding: 0;
+        height: 0px;
+        transition: height ease-in 0.4s;
+    }
+
+    .nav-menu-active {
+        height: 100vh !important;
+        display: flex !important;
+        background-color:var(--color-black);
+        z-index: 200 !important;
+    }
+
+    .js-nav-menu ul li {
+        margin: 0px 0px 30px 0px !important;
+    }
+
+    .js-nav-toggle {
+        display: block;
+        margin-left: auto;
+        z-index: 200;
+    }
+
+    .js-nav-toggle i {
+        color: var(--color-white);
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,218 @@
+/* Footer Main container */
+.main-footer {
+    background-color:var(--color-black);
+    padding: 12em 4em 0 4em;
+    margin-bottom: 0px;
+}
+
+/* Footer Inner Container */
+.site-footer {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 80px;
+    justify-content: space-between;
+}
+
+/* Footer left side  */
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 45%;
+}
+
+/* foooter left side menus heading  */
+
+.inner-sections-footer .widget .widget-wrap h4 {
+    font-size: 21px;
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+/* footer menus padding */
+.inner-sections-footer .widget .widget-wrap div ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer menus items */
+.inner-sections-footer .widget .widget-wrap div ul li {
+    width: fit-content;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.inner-sections-footer .widget .widget-wrap div ul li a{
+    color:var(--color-white);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.inner-sections-footer .widget .widget-wrap div ul li a:hover {
+    color:var(--color-yellow);
+}
+
+/* Footer right side  */
+.footer-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Footer right side heading */
+.footer-right__inner-section h3 {
+    font-size: 52px;
+    color: var(--color-white);
+    margin: 0;
+}
+
+/* footer right side form  */
+.newsletter-form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Bottom styles */
+.footer-bottom-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid var(--border-gray);
+}
+
+/* Footer Bottom left side styles */
+.footer-bottom-left {
+    width: 50%;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.footer-copyright-text {
+    font-weight: 200;
+    color:var(--color-white);
+}
+
+.footer-bottom-left a {
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--color-white);
+    margin-left: 20px;
+}
+
+/* Fotter bottom right side */
+.footer-bottom-right {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* footer bottom */
+.footer-bottom-right ul {
+    display: flex;
+}
+
+/* footer bottom icon list */
+.footer-bottom-right ul li {
+    margin-left: 20px;
+}
+
+/* footer bottom icons */
+.footer-bottom-right ul li a i {
+    font-size: 24px;
+    color:var(--color-white);
+}
+
+/* responsive for tablets */
+@media only screen and (max-width:1035px) {
+    /* inner footer div 1 */
+    .site-footer {
+        flex-direction: column-reverse;
+    }
+
+    /* footer left and right  */
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        max-width: 100%
+    }
+
+    /* footer right inner sections */
+    .footer-right .footer-right__inner-section {
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    /* footer bottom section */
+    .footer-bottom-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* footer bottom sections left and right */
+    .footer-bottom-left,
+    .footer-bottom-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* footer bottom right padding */
+    .footer-bottom-right ul {
+        padding: 0;
+    }
+}
+
+
+/* Resoponsive for mobiles */
+@media only screen and (max-width:768px) {
+
+    /* form header display none */
+    .footer-right__inner-section h3{
+        display: none;
+    }
+
+    /* footer right section  */
+    .footer-right__inner-section {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    /* footer sectins */
+    .inner-sections-footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* footer left section */
+    .footer-left {
+        flex-direction: column;
+    }
+
+    /* main footer wrap */
+    .main-footer {
+        padding: 4em 1em 0 1em;
+    }
+
+    /* footer bottom left side */
+    .footer-bottom-left {
+        border-top: 2px solid var(--border-gray);
+    }
+
+    /* footer bottom main section  */
+    .footer-bottom-section {
+        flex-direction: column-reverse;
+        border: none;
+    }
+
+    /* footer bottom right first icon margin */
+    .footer-bottom-right ul li:first-child {
+        margin: 0;
+    }
+
+}
